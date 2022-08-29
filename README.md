@@ -50,13 +50,15 @@ PROCEDURE
 
 
 
-CIRCUIT DIAGRAM 
+### CIRCUIT DIAGRAM 
+
+![image](https://user-images.githubusercontent.com/93427201/187187615-a48431d8-b90a-4295-b570-f1987dd84d0d.png)
+
+### Before simulation:
+![out](https://user-images.githubusercontent.com/93427201/187187679-2e56e76d-37d0-4662-95e4-73b08537e2cb.png)
 
 
 
-
-
-![image](https://user-images.githubusercontent.com/36288975/163530437-87a0afbd-b3c9-44ad-b907-5de63486fb9d.png)
 
 
 
@@ -66,16 +68,39 @@ FIGURE -03
 
 
 
-PROGRAM 
- 
- 
- 
- 
- 
+## PROGRAM :
+~~~
+NAME:V.A.JITHENDRA
+REF NO:212221230043
+// C++ code
+int ledpin=4;
+int pushbtn=2;
+int val=0;
+void setup()
+{
+  pinMode(ledpin, OUTPUT);
+  pinMode(pushbtn,INPUT);
+}
 
+void loop()
+{
+  val=digitalRead(pushbtn);
+  if(val==0)
+  {
+    digitalWrite(ledpin,HIGH);
+  }
+  else
+  {
+    digitalWrite(ledpin,LOW);
+  }
+}
+ 
+~~~ 
+ 
+### Output of the simulation :
 
+![work](https://user-images.githubusercontent.com/93427201/187187715-fa4f9b61-face-41ce-aeed-4c60f1631bf8.png)
 
-Output of the simulation :
-
-[My image](username.github.com/repository/img/image.jpg)
+### Result:
+Thus, we have interfaced a digital input (push button) and blink of LED upon activation.
 
